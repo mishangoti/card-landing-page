@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDesign4</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">ONCOIN</a>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Trainers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="signin_button">
+                <li><a href="#" class="button1">Sign In</a></li>
+                <li><a href="#" class="button1">Sign Up</a></li>
+            </ul>
+            <div class="toggleMenu" onclick="toggleMenu();"></div>
+
+        </header>
+        <div class="content">
+            <div class="contentBx">
+                <h2>Trade stocks, <br>
+                earn bonus <br>
+                shares. Enjoy</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, <br>
+                    officiis dolorum, dolorem asperiores, in consequuntur <br>
+                    velit quod quaerat voluptates?</p>
+                <a href="#"><img src="images/arrow.png" alt=""></a>
+            </div>
+        </div>
+         <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+        </ul>
+    </section>   
+    <script type="text/javascript">
+        function toggleMenu(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script> 
+</body>
+</html>
